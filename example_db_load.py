@@ -49,4 +49,4 @@ with open(DB_name) as tmp:
         ax1.axvspan(gt_boxes[i][0], gt_boxes[i][1], alpha=0.3, color=color, label=name)
 
     plt.legend()
-    plt.show()
+    plt.show() 
