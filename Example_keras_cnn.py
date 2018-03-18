@@ -83,9 +83,9 @@ model.compile(loss='categorical_crossentropy',
 model.fit(x = X_train,
              y = Y_train,
              batch_size=batch_size,
-             epochs=1,
+             epochs=nb_epoch,
              validation_data=(X_valid,Y_valid),
              shuffle=True,
              callbacks=[lr_reducer, early_stopper, csv_logger])
 
-model.save('aaa.h5')
+model.save('model.h5')
