@@ -64,8 +64,8 @@ class DataSet(object):
                                            fg_overlap=0.8, bg_overlap=0.3)
 
             #6 ---- Filter data
-            dataset = np.reshape(dataset, (-1, 9, 1000))
-            dataset = butterfilter_data(dataset)
+            #dataset = np.reshape(dataset, (-1, 9, 1000))
+            #dataset = butterfilter_data(dataset)
 
             #6 ---- Generate folds
             print("Generating " + str(nbKFold) + " folds")
